@@ -1,30 +1,16 @@
 function Home(){
     return(
         <>
-        <main>
-            <section style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                backgroundColor:"#1d5705",
-                }}>
-                <article style={{
-                    display:"flex",
-                    flexDirection:"column",
-                    alignItems:"center",
-                    justifyContent:"center",
-                    color:"white"
-                }}>
-                    <h1>Seja bem vindo!</h1>
-                    <p>Expresse aqui seus pensamentos e opiniões</p>
-                    <button style={{
-                        border:"1rem",
-                        padding:"0.5rem",
-                        borderRadius: "1rem"
-                    }}>Nova postagem</button>
+        <main className="bg-green-700 flex justify-center">
+            <section className="container grid grid-cols-2 text-white">
+                <article className="flex flex-col gap-4 items-center justify-center py-4">
+                    <h1 className="text-5xl font-bold">Seja bem vindo!</h1>
+                    <p className="text-x1">Expresse aqui seus pensamentos e opiniões</p>
+                    <button className="rounded text-white border-white border-solid border-2 py-2 px-4">Nova postagem</button>
                 </article>
                 
-                <figure>
-                    <img src="https://i.imgur.com/GOXBTaw.jpg" alt="" width={"80%"} style={{borderRadius: "1rem"}}/>
+                <figure className="flex justify-center">
+                    <img src="https://i.imgur.com/GOXBTaw.jpg" alt="" className="w-2/3 rounded"/>
                 </figure>
             </section>
         </main>
